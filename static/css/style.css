@@ -1,0 +1,80 @@
+:root {
+  --dark-blue: hsl(217, 28%, 15%);
+  --dark-blue-main: hsl(218, 28%, 13%);
+  --open-sans: "Open Sans", sans-serif;
+  --raleway: "Raleway", sans-serif;
+  --light: white;
+  font-size: 14px;
+  /* - Dark Blue (footer background): hsl(216, 53%, 9%)
+- Dark Blue (testimonials background): hsl(219, 30%, 18%) */
+}
+
+body {
+  background: var(--dark-blue-main);
+  color: var(--light);
+  font-family: var(--open-sans);
+  margin: 0;
+}
+.header {
+}
+.header-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  height: 100px;
+  align-items: center;
+}
+
+.header-grid img {
+  padding: 0;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+.menu a {
+  padding: 1em;
+  color: var(--light);
+  text-decoration: none;
+  font-family: var(--raleway);
+  font-size: 1em;
+}
+
+.wrapper {
+  max-width: 1024px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.hero {
+  text-align: center;
+}
+
+h1 {
+  font-family: var(--raleway);
+  font-size: 1.7em;
+  line-height: 1.7em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  line-height: 1.7;
+  margin-bottom: 3em;
+}
+
+.button {
+  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  color: var(--light);
+  border: none;
+  padding: 1em;
+  width: 100%;
+  border-radius: 2em;
+  font-size: 1.2em;
+}
